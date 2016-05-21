@@ -6,23 +6,46 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
     android:gravity="top|center_horizontal">
-
     <LinearLayout
         android:orientation="horizontal"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="0dp">
+        android:layout_marginTop="0dp"
+        android:id="@+id/linearLayout1">
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="200px"
+        android:layout_height="100px"
+        android:text="Cllear"
+        android:id="@+id/button"
+        android:onClick="cllear_all"
+        android:layout_alignTop="@+id/linearLayout1"
+        android:layout_alignParentStart="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/linearLayout1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:layout_centerHorizontal="true">
+
+
 
         <TextView
-            android:gravity="center"
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-
+            android:layout_marginLeft="90dp"
             android:text="@string/databases"
             android:textStyle="bold"
-            android:id="@+id/textView">
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal">
         </TextView>
 
 
@@ -30,4 +53,6 @@
 
 
     </LinearLayout>
+
+
 </RelativeLayout>

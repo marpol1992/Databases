@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">Databases</string>
-    <string name="databases">Moja pierwsza baza danych</string>
+    <string name="databases">Moja pierwsza baza danych:</string>
 </resources>
